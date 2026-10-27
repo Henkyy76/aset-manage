@@ -1,0 +1,29 @@
+class Asset {
+  final String id;
+  final String name;
+  final String categoryId;
+  final String typeId;
+  final String unitId;
+  final String locationId;
+  final String fundingSourceId;
+  final DateTime purchaseDate;
+  final double purchasePrice;
+  final String condition; // baik, rusak, etc.
+  final String? imageUrl;
+  final String assetCode; // AST-yyyyMMdd-XXXX
+
+  Asset({
+    required this.id,
+    required this.name,
+    required this.categoryId,
+    required this.typeId,
+    required this.unitId,
+    required this.locationId,
+    required this.fundingSourceId,
+    required this.purchaseDate,
+    required this.purchasePrice,
+    required this.condition,
+    this.imageUrl,
+    required this.assetCode,
+  });
+}
